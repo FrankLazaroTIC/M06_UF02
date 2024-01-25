@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    
+    <h1>Part 0 y Part 1</h1>
+    <div>
+    <form>
+        <input type="radio" name="tabla" id="pokemon" onclick="pokemonData()">
+        <label for="pokemon">TAULA POKEMON</label>
+      
+        <input type="radio" name="tabla" id="municipis" onclick="municipisData()">
+        <label for="municipis">TAULA MUNICIPIS</label>
+      
+        <input type="radio" name="tabla" id="meteorits" onclick="meteoritsData()">
+        <label for="meteorits">TAULA METEORITS</label>
+      
+        <input type="radio" name="tabla" id="movies" onclick="moviesData()">
+        <label for="movies">TAULA MOVIES</label>
+      </form>
+    <br>
+    <button onclick="iniciar()">INICIAR</button>
+    <h3>Els botons només funcionen per la taula Pokemon</h3>
+    <button onclick="iniciar()">INICIAR</button>
+    <button onclick="orderList('asc')">ORDER ASC</button>
+    <button onclick="orderList('desc')">ORDER DESC</button>
+    <button onclick="calcMitjana()">MITJANA PES</button>
+    <h5>Part 3</h5>
+    <input type="text" value="" id="txtSearch" oninput="filterList()">
+    <div id="resultat"></div>
+    </div>
+
+    <h1>Part 2</h1>
+    <div class="chart-container" style="position: relative; width:700px"></div>
+    <button onclick="mostrarGrafico()">GRAFIC TIPUS POKEMON</button>
+    <canvas id="myChart"></canvas>
+    <button onclick="mostrarGraficoMovies()">GRAFIC MOVIES</button>
+    <canvas id="moviesChart"></canvas>
+</div>
+</body>
+</html>
